@@ -1,0 +1,14 @@
+[
+    {
+        "nombres": "Pepito Jose",
+        "apellidos": "Suarez Cespedes",
+        "correo": "algo@gmail.com",
+        "cedula": 1714121510
+    },
+    {
+        "nombres": "Juanito Manuel",
+        "apellidos": "Flores Arias",
+        "correo": "jnnas@gmail.com",
+        "cedula": 1714169501
+    }
+]

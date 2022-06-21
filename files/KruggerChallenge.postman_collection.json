@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "f78440b6-f07d-4b2b-b98a-9678a6db7a0f",
+		"name": "KruggerChallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21286413"
+	},
+	"item": [
+		{
+			"name": "saveIndividual",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"cedula\":1777777771,\r\n        \"nombres\":\"diogo andro\",\r\n        \"apellidos\":\"solocho moon\",\r\n        \"correo\":\"diogos@hotmail.com\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAddress",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/updated/1777777771/biloxi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"updated",
+						"1777777771",
+						"biloxi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBirthday",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/updateb/1777777771/1985-5-18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"updateb",
+						"1777777771",
+						"1985-5-18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePhone",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/updatet/1777777771/0999702847",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"updatet",
+						"1777777771",
+						"0999702847"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateStatusVaccinated",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/updates/1777777771/true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"updates",
+						"1777777771",
+						"true"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTypeVaccine",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/updatetv/1777777771/Sputnik",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"updatetv",
+						"1777777771",
+						"Sputnik"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FilterForTypeVaccine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/tipovac/Pfizer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"tipovac",
+						"Pfizer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FilterForStatusVaccinated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/estvac/false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"estvac",
+						"false"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateDateVaccinated",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/updatefv/1777777771/2020-05-05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"updatefv",
+						"1777777771",
+						"2020-05-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateNumberDosis",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/updatedosis/1777777771/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"updatedosis",
+						"1777777771",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveListOfEmployees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"cedula\":1711111111,\r\n        \"nombres\":\"empleado name\",\r\n        \"apellidos\":\"empleados surname\",\r\n        \"correo\":\"emp1@hotmail.com\"\r\n    },\r\n    {\r\n        \"cedula\":1771111111,\r\n        \"nombres\":\"empleado namess\",\r\n        \"apellidos\":\"empleadosss surnamess\",\r\n        \"correo\":\"emp2@hotmail.com\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/addempleados/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"addempleados",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FilterDateRangeOfVaccinated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/rango/2020-04-04/2020-06-07",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"rango",
+						"2020-04-04",
+						"2020-06-07"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindEmployeeByCedula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/kruger-challenge/api/empleados/consult/1721124053",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"kruger-challenge",
+						"api",
+						"empleados",
+						"consult",
+						"1721124053"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

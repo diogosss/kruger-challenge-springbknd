@@ -29,6 +29,10 @@ public class EmpleadoService {
         return empleadoRepository.save(empleado);
     }
 
+    public void deleteEmployee(Integer id){
+        empleadoRepository.deleteById(id);
+    }
+
     public List<Empleado> findAllEmployees(){
         return empleadoRepository.findAll();
     }
@@ -106,4 +110,5 @@ public class EmpleadoService {
         emp.setNumdosis(dosis);
         return empleadoRepository.save(emp);
     }
+
 }

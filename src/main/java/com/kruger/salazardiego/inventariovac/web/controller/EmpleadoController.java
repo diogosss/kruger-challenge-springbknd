@@ -20,6 +20,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/empleados")
@@ -38,19 +39,21 @@ public class EmpleadoController {
 
     @GetMapping("/all")
     @ApiOperation("Consultar todos los empleados")
-    @ApiResponse(code = 200, message = "Created")
+    @ApiResponse(code = 200, message = "Finded")
     public List<Empleado> getAllEmployees(){
         return empleadoService.findAllEmployees();
     }
 
-/*
-    @GetMapping("/empid")
-    public Empleado getEmployeeById(@RequestParam int id){
-        return empleadoService.findEmployeeById(id);
+
+    @GetMapping("/consult/{cedula}")
+    @ApiOperation("Buscar empleado por su numero de cedula")
+    @ApiResponse(code = 200, message = "Finded")
+    public Optional<Object> getEmployeeById(@RequestParam("cedula") long cedula){
+        return empleadoService.findEmpleadoByCedula(cedula);
     }
 
 
-
+/*
     @GetMapping("/empsids")
     public List<Empleado> getEmployeeById(@RequestBody List<Integer> ids){
         return empleadoService.findAllEmployeesByIds(ids);
@@ -72,6 +75,17 @@ public class EmpleadoController {
         }
 
     }
+
+    @DeleteMapping("/delete/{id}")
+    @ApiOperation("Borra un empleado de acuerdo a su ID")
+    @ApiResponse(code = 200, message = "Created")
+    void deleteEmployee(@ApiParam(value = "Id empleado",example = "1")@PathVariable("id") Integer id) {
+        empleadoService.deleteEmployee(id);
+    }
+
+    /*
+    * Update data from role Employees
+    * */
 
     //Update data from employees
 
@@ -173,6 +187,8 @@ public class EmpleadoController {
                                    @PathVariable("dosis") Integer dosis){
         return empleadoService.updateNumDosis(cedula,dosis);
     }
+
+
 
     //Update one method jsonPatch
 
