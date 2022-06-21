@@ -56,7 +56,7 @@ To be able to run this program without complications it is necessary the next Po
 
 To create a table `empleados` with all the entities necessary, you can use this .sql file:
 
-[empleados.sql](http://localhost/)
+[empleados.sql](https://github.com/diogosss/kruger-challenge-springbknd/blob/main/files/empleados.sql)
 
 #### Model data
 
@@ -82,7 +82,7 @@ Or you can create a database table with the next specifications
 
 You can find example of data to insert by the application in this file:
 
-[empleados.json](http://localhost/)
+[empleados.json](https://github.com/diogosss/kruger-challenge-springbknd/blob/main/files/exampledata.json)
 
 Or you can send data in this format:
 
@@ -148,7 +148,7 @@ To test and see the documentation of this API you can with Swagger2 in the next 
 
 You can find a Postman collection to test this application in this file:
 
-[KruggerChallenge.postman_collection.json](http://localhost/)
+[KruggerChallenge.postman_collection.json](https://github.com/diogosss/kruger-challenge-springbknd/blob/main/files/KruggerChallenge.postman_collection.json)
 
 ## TODO
 
