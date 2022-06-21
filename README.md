@@ -136,7 +136,7 @@ $> java -jar inventariovac-1.0.0.jar
 ```
 The .jar file can be download from:
 
-[inventariovac-1.0.0.jar](http://localhost/)
+[inventariovac-1.0.0.jar](https://github.com/diogosss/kruger-challenge-springbknd/raw/main/files/inventariovac-1.0.0.jar)
 
 ## Test and Documentation
 
