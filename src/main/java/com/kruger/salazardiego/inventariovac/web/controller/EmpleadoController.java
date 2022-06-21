@@ -1,3 +1,7 @@
+/*
+ * Coded by Diego Salazar for the Kruger CHallenge
+ * */
+
 package com.kruger.salazardiego.inventariovac.web.controller;
 
 import com.kruger.salazardiego.inventariovac.domain.respository.EmpleadoRepository;

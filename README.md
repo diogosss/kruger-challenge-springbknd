@@ -129,7 +129,7 @@ The present code was compiled with:
 
 
 ## Mode of operation
-In the command line run the next write:
+In the command line run the next line of code to start the server:
 
 ```bash
 $> java -jar inventariovac-1.0.0.jar
